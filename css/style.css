@@ -1,0 +1,85 @@
+body {
+    padding-top: 90px;
+    padding-bottom: 0;
+    background-color: #dddedf;
+}
+ 
+.presentation {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 0.5rem;
+    max-width: 95.5%;
+    padding: 10px;
+    margin: 2%;
+    border: 2px ridge rgb(38, 38, 38);
+    border-radius: 15px;
+}
+ 
+.presentation div.pre {
+    text-align: center;
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-family: 'Times New Roman', Times, serif;
+    border: 1px ridge rgb(38, 38, 38);
+    border-radius: 15px;
+    padding: 10px;
+    margin: 2%;
+}
+ 
+.presentation div.pre:hover {
+    transform: scale(0.97);
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0 5px 15px rgb(46, 46, 46);
+}
+ 
+nav.navbar {
+    min-height: 80px;
+}
+ 
+nav.navbar .navbar-nav .nav-link {
+    font-size: 1.3rem !important;
+}
+ 
+nav.navbar .navbar-brand {
+    font-size: 2rem !important;
+}
+ 
+.page-title {
+    margin-top: 1.2%;
+}
+ 
+#conteneur {
+    position: relative;
+    width: 100%;
+    min-height: unset !important;
+    height: 500px;
+    overflow: hidden;
+    background-color: #dddedf;
+    background-color: #dddedf !important;
+}
+ 
+#content {
+    position: absolute;
+    box-shadow: 0 0 25px rgb(26, 26, 26);
+    top: 50%;
+    transform: translateY(-50%);
+    max-width: 600px;
+    width: 60%;
+    animation: bouge 20s infinite alternate ease-in-out;
+}
+ 
+@keyframes bouge {
+    0%   { left: 2%; }
+    100% { left: calc(100% - 62%); }
+}
+ 
+h3 {
+    font-family: 'Lucida Sans', Geneva, Verdana, sans-serif;
+}
+ 
+footer {
+    background-color: #212529;
+    color: white;
+    text-align: center;
+    padding: 12px 0;
+}

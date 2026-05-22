@@ -1,0 +1,62 @@
+html, body {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; 
+    overflow-y: hidden;
+    background-color: #dddedf;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: #dddedf;
+    padding-top: 80px; 
+}
+
+nav.navbar {
+    min-height: 80px;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+nav.navbar .navbar-brand {
+    font-size: 2rem !important;
+}
+
+nav.navbar .navbar-nav .nav-link {
+    font-size: 1.3rem !important;
+    padding-top: 0.6rem;
+    padding-bottom: 0.6rem;
+}
+
+
+#image {
+    object-fit: fill;
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+.img-principale {
+    width: 1050px;
+    height: 550px;
+    max-width: 100%;
+}
+
+.image-wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.controles {
+    margin-top: 1.5%;
+}
+
+footer {
+    background-color: #212529;
+    color: white;
+    text-align: center;
+    padding: 12px 0;
+}

@@ -1,0 +1,74 @@
+html, body {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    overflow-y: hidden; 
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: #dddedf;
+    padding-top: 80px;
+}
+
+nav.navbar {
+    min-height: 80px;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+nav.navbar .navbar-brand {
+    font-size: 2rem !important;
+}
+
+nav.navbar .navbar-nav .nav-link {
+    font-size: 1.3rem !important;
+    padding-top: 0.6rem;
+    padding-bottom: 0.6rem;
+}
+
+.containerN {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 0;
+    padding: 15px;
+}
+
+.contenu {
+    width: 100%;
+    max-width: 750px;
+    max-height: 100%;
+    overflow-y: auto; 
+    padding: 20px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+input.reset {
+    width: auto;
+    border-radius: 0;
+}
+
+input.saisie {
+    border-radius: 10px;
+    padding-left: 10px;
+    width: 50px;
+}
+
+#champ {
+    margin: 0;
+}
+
+footer {
+    background-color: #212529;
+    color: white;
+    text-align: center;
+    padding: 12px 0;
+}

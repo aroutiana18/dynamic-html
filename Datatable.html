@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Datatable</title>
+  <link rel="stylesheet" href="bootstrap/bootstrap.css">
+  <link rel="stylesheet" href="css/datatables.min.css">
+  <link rel="stylesheet" href="fontAwesome/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/jquery-3.7.1.min.js"></script>
+  <script src="bootstrap/bootstrap.bundle.min.js"></script>
+  <script src="js/chart.umd.min.js"></script>
+  <script src="js/datatables.min.js"></script>
+  <script src="js/Datatable.js" defer></script>
+</head>
+ 
+<body class="d-flex flex-column min-vh-100">
+ 
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow-lg">
+      <div class="container-fluid px-5">
+        <a class="navbar-brand d-flex align-items-center fw-bold" href="index.html">
+          <i class="fa-solid fa-laptop me-2"></i>ABC²
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarContent">
+          <ul class="navbar-nav gap-4 fw-semibold">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html"><i class="fa-solid fa-house me-1"></i> Accueil</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Cramer.html"><i class="fa-solid fa-square-root-variable me-1"></i> Cramer</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Image.html"><i class="fa-solid fa-image me-1"></i> Image</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="PanneauxPub.html"><i class="fa-solid fa-rectangle-ad me-1"></i> Publicité</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Datatable.html"><i class="fa-solid fa-table me-1"></i> Data Table</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+ 
+  <div class="container mt-4">
+    <h1 class="text-center"><i class="fa-solid fa-database"></i> Listes des équipements informatiques <i class="fa-solid fa-database"></i></h1>
+    <div class="table-responsive">
+      <table id="maTable" class="table table-striped table-bordered">
+        <thead>
+          <tr>
+            <th>Désignation</th>
+            <th>Quantité</th>
+            <th>Prix (Euro)</th>
+            <th>Montant</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><th>Routeur</th><td id="q1">5</td><td id="p1">400 £</td><td class="montant" id="m1"></td></tr>
+          <tr><th>Switch</th><td id="q2">8</td><td id="p2">300 £</td><td class="montant" id="m2"></td></tr>
+          <tr><th>Hub</th><td id="q3">15</td><td id="p3">30 £</td><td class="montant" id="m3"></td></tr>
+          <tr><th>Modem</th><td id="q4">17</td><td id="p4">78 £</td><td class="montant" id="m4"></td></tr>
+          <tr><th>Emeteur</th><td id="q5">20</td><td id="p5">80 £</td><td class="montant" id="m5"></td></tr>
+          <tr><th>Capteur</th><td id="q6">20</td><td id="p6">80 £</td><td class="montant" id="m6"></td></tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <th>Total</th>
+            <th id="total-qte"></th>
+            <th></th>
+            <th id="total-montant"></th>
+          </tr>
+        </tfoot>
+      </table>
+    </div>
+ 
+    <form class="shadow-lg rounded border p-3 bg-light mt-4">
+      <div class="mb-3 w-25">
+        <label class="form-label">Prix moyen :</label>
+        <input type="text" class="form-control" id="PrixMoyenne" readonly>
+      </div>
+      <div class="mb-3 w-25">
+        <label class="form-label">Prix minimal :</label>
+        <input type="text" class="form-control" id="PrixMinimal" readonly>
+      </div>
+      <div class="mb-3 w-25">
+        <label class="form-label">Prix maximal :</label>
+        <input type="text" class="form-control" id="PrixMaximal" readonly>
+      </div>
+    </form>
+ 
+    <div class="row mt-4">
+      <div class="col-md-6">
+        <canvas id="barGraphe" aria-label="Bar Chart" role="img"></canvas>
+      </div>
+      <div class="col-md-6">
+        <canvas id="pieGraphe" aria-label="Pie Chart" role="img"></canvas>
+      </div>
+    </div>
+  </div>
+ 
+  <footer class="bg-dark text-white text-center py-4 mt-auto">
+    <p class="mb-0">
+      &copy; 2025 DHTMLProject<br>
+        <small class="text-muted">
+          Développé par 
+          <a href="https://github.com/Diamondra-arch" class="text-info text-decoration-none">Diamondra</a>, 
+          <a href="" class="text-info text-decoration-none">Aimé</a>,
+          <a href="" class="text-info text-decoration-none">Lahatra</a> et
+          <a href="https://github.com/aroutiana18" class="text-info text-decoration-none fw-bold">Arotiana</a>
+        </small>
+    </p>
+  </footer>
+ 
+</body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="fr">
+ 
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="bootstrap/bootstrap.css" />
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="bootstrap/bootstrap.bundle.min.js"></script>
+    <title>ProjetDHTML</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="fontAwesome/css/all.min.css">
+  </head>
+ 
+  <body class="d-flex flex-column min-vh-100">
+ 
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow-lg">
+      <div class="container-fluid px-5">
+        <a class="navbar-brand d-flex align-items-center fw-bold" href="index.html">
+          <i class="fa-solid fa-laptop me-2"></i>ABC²
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarContent">
+          <ul class="navbar-nav gap-4 fw-semibold">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html"><i class="fa-solid fa-house me-1"></i> Accueil</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Cramer.html"><i class="fa-solid fa-square-root-variable me-1"></i> Cramer</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Image.html"><i class="fa-solid fa-image me-1"></i> Image</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="PanneauxPub.html"><i class="fa-solid fa-rectangle-ad me-1"></i> Publicité</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Datatable.html"><i class="fa-solid fa-table me-1"></i> Data Table</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+ 
+    <div class="d-flex justify-content-center align-items-center page-title">
+      <h1><i class="fa-solid fa-home"></i> Accueil <i class="fa-solid fa-home"></i></h1>
+    </div>
+ 
+    <div class="container-fluid">
+      <h2 class="text-center">Voici ce que vous aller découvrir dans notre site</h2>
+      <div class="presentation">
+        <div class="pre" onclick="window.location = 'Cramer.html'">
+          <h3>Résolution de système d'équation à 3 inconnues <i class="fa-solid fa-calculator"></i></h3>
+          <br> Vous pourrez résoudre cette équation en utilisant la méthode de Cramer
+        </div>
+        <div class="pre" onclick="window.location = 'Image.html'">
+          <h3>Image redimensionnable <i class="fa-solid fa-image"></i></h3>
+          <br> Il y a une image dont vous pouvez redimensionner la largeur et la hauteur à votre guise
+        </div>
+        <div class="pre" onclick="window.location = 'PanneauxPub.html'">
+          <h3>Panneaux publicitaires <i class="fa-solid fa-rectangle-ad"></i></h3>
+          <br> Des publicités en utilisant des images défilées qui présentent des matériaux informatiques
+        </div>
+        <div class="pre" onclick="window.location = 'Datatable.html'">
+          <h3>Tableaux Statistique <i class="fa-solid fa-database"></i></h3>
+          <br> Un "DataTable" avec lequel on pourra calculer des prix des équipements informatiques et les présenter graphiquement
+        </div>
+      </div>
+    </div>
+ 
+    <div id="conteneur">
+      <div class="card mx-auto p-5 shadow-lg rounded-4" id="content">
+        <h2 class="text-center text-secondary mb-4">
+          Bienvenue dans notre projet DHTML <i class="fa-solid fa-code"></i>
+        </h2>
+        <p style="text-align: justify">
+          Ce site est dédié à la présentation de notre projet informatique. Il
+          s'agit d'une plateforme claire, interactive et bien structurée
+          permettant de visualiser efficacement la liste des équipements
+          informatiques. Grâce à l'intégration de DataTables, Bootstrap et
+          Chart.js, notre projet est à la fois esthétique, dynamique et
+          fonctionnel. Nous avons mis un point d'honneur à rendre l'interface
+          intuitive, responsive et agréable à utiliser.
+        </p>
+      </div>
+    </div>
+ 
+    
+    <footer class="bg-dark text-white text-center py-4 mt-auto">
+      <p class="mb-0">
+        &copy; 2025 DHTMLProject<br />
+        <small class="text-muted">
+          Développé par 
+          <a href="https://github.com/Diamondra-arch" class="text-info text-decoration-none">Diamondra</a>, 
+          <a href="" class="text-info text-decoration-none">Aimé</a>,
+          <a href="" class="text-info text-decoration-none">Lahatra</a> et
+          <a href="https://github.com/aroutiana18" class="text-info text-decoration-none fw-bold">Arotiana</a>
+        </small>
+      </p>
+    </footer>
+ 
+    <script src="js/jquery-3.7.1.min.js"></script>
+  </body>
+</html>
+ 

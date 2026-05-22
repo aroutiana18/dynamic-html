@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ResizeImage</title>
+    <link href="bootstrap/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="fontAwesome/css/all.min.css">
+    <link rel="stylesheet" href="css/image.css">
+    <script src="bootstrap/bootstrap.bundle.min.js"></script>
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow-lg">
+      <div class="container-fluid px-5">
+        <a class="navbar-brand d-flex align-items-center fw-bold" href="index.html">
+          <i class="fa-solid fa-laptop me-2"></i>ABC²
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarContent">
+          <ul class="navbar-nav gap-4 fw-semibold">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html"><i class="fa-solid fa-house me-1"></i> Accueil</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Cramer.html"><i class="fa-solid fa-square-root-variable me-1"></i> Cramer</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Image.html"><i class="fa-solid fa-image me-1"></i> Image</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="PanneauxPub.html"><i class="fa-solid fa-rectangle-ad me-1"></i> Publicité</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Datatable.html"><i class="fa-solid fa-table me-1"></i> Data Table</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main class="flex-grow-1 d-flex flex-column align-items-center">   
+      <div class="container-fluid">
+          <div class="container p-3 bg-dark text-white controles">
+              <div class="container text-center">
+                  <h2 class="mb-4"><i class="fa-solid fa-image"></i> Redimensionner l'image <i class="fa-solid fa-image"></i></h2>
+                  <div class="row mt-4">
+                      <div class="col-md-6">
+                          <label for="widthRange" class="form-label">Largeur (%)</label>
+                          <input type="range" class="form-range" min="10" max="100" value="100" id="widthRange">
+                      </div>
+                      <div class="col-md-6">
+                          <label for="heightRange" class="form-label">Hauteur (%)</label>
+                          <input type="range" class="form-range" min="10" max="100" value="100" id="heightRange">
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </main>
+
+    <div class="image-wrapper mt-2 mb-2">
+      <img id="image" src="images/game.avif" class="border img-principale" alt="Image redimensionnable">
+    </div>
+    <footer class="bg-dark text-white text-center py-4 mt-auto">
+        <p class="mb-0">
+            &copy; 2025 DHTMLProject<br>
+        <small class="text-muted">
+          Développé par 
+          <a href="https://github.com/Diamondra-arch" class="text-info text-decoration-none">Diamondra</a>, 
+          <a href="" class="text-info text-decoration-none">Aimé</a>,
+          <a href="" class="text-info text-decoration-none">Lahatra</a> et
+          <a href="https://github.com/aroutiana18" class="text-info text-decoration-none fw-bold">Arotiana</a>
+
+        </small>
+        </p>
+    </footer>
+    <script src="js/resize.js"></script>
+
+</body>
+</html>

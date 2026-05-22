@@ -1,0 +1,148 @@
+/*
+ * PanneauxPub.css gère uniquement les styles spécifiques à PanneauxPub.html.
+ * Corrections :
+ * 1. padding-top aligné à 90px (cohérent avec toutes les pages)
+ * 2. body : retiré justify-content/align-items sans display:flex (conflit Bootstrap)
+ * 3. style.css n'est PAS importé dans PanneauxPub.html (règles inutiles ici)
+ */
+body {
+    padding-top: 90px;
+    padding-bottom: 20px;
+    background-color: #dddedf;
+}
+
+/* Navbar identique à toutes les pages */
+nav.navbar {
+    min-height: 80px;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+nav.navbar .navbar-brand {
+    font-size: 2rem !important;
+}
+
+nav.navbar .navbar-nav .nav-link {
+    font-size: 1.3rem !important;
+    padding-top: 0.6rem;
+    padding-bottom: 0.6rem;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+#panneaux {
+    margin-top: 0.3%;
+    margin-bottom: 1%;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: x-large;
+}
+
+#contenneur {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    max-width: 700px;
+    padding: 2px;
+    margin: auto;
+    border: 2px solid black;
+    border-radius: 20px;
+    box-shadow: 0 0 45px rgb(65, 63, 63);
+    overflow: hidden;
+}
+
+#lesimages {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    border-radius: 35px;
+}
+
+img.rien {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.3;
+    transform: scale(0.8);
+    filter: blur(3px);
+    transition: all 2s ease-in-out;
+}
+
+img.rien.visible {
+    opacity: 1;
+    z-index: 2;
+    transform: scale(1);
+    filter: blur(0);
+}
+
+.slogan {
+    text-align: center;
+    font-size: 1em;
+    font-style: italic;
+    color: #333;
+}
+
+button.btn {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px 15px;
+    width: 50px;
+    height: 55px;
+}
+
+button#gauche {
+    left: -2px;
+}
+
+button#droite {
+    right: -2px;
+}
+
+button#pause {
+    right: 47%;
+}
+
+.bubbles-container {
+    text-align: center;
+    margin-top: 10px;
+    bottom: 10px;
+}
+
+.bubble {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin: 0 5px;
+    background-color: #ccc;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+}
+
+.bubble.active {
+    background-color: rgb(38, 36, 36);
+}
+
+footer {
+    background-color: #212529;
+    color: white;
+    text-align: center;
+    padding: 12px 0;
+}

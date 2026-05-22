@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="fr">
+ 
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/PanneauxPub.css" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="fontAwesome/css/all.min.css">
+    <title>Pubs</title>
+    <script src="bootstrap/bootstrap.bundle.min.js"></script>
+  </head>
+ 
+  <body class="d-flex flex-column min-vh-100">
+ 
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow-lg">
+      <div class="container-fluid px-5">
+        <a class="navbar-brand d-flex align-items-center fw-bold" href="index.html">
+          <i class="fa-solid fa-laptop me-2"></i>ABC²
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarContent">
+          <ul class="navbar-nav gap-4 fw-semibold">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html"><i class="fa-solid fa-house me-1"></i> Accueil</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Cramer.html"><i class="fa-solid fa-square-root-variable me-1"></i> Cramer</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Image.html"><i class="fa-solid fa-image me-1"></i> Image</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="PanneauxPub.html"><i class="fa-solid fa-rectangle-ad me-1"></i> Publicité</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Datatable.html"><i class="fa-solid fa-table me-1"></i> Data Table</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+ 
+    <main class="container-fluid flex-grow-1">
+      <div id="panneaux" class="container-fluid">
+        <div id="contenneur" class="container-fluid">
+          <h1><i class="fa-solid fa-rectangle-ad"></i> Pub pour vous ! <i class="fa-solid fa-rectangle-ad"></i></h1>
+          <div id="lesimages" class="container-fluid">
+            <button class="btn" id="gauche" title="Afficher l'image précédente"><i class="fa-solid fa-arrow-left"></i></button>
+            <img src="images/routeur.png" alt="routeur" class="rien visible img-fluid"/>
+            <img src="images/Switch.png" alt="Switch" class="rien img-fluid"/>
+            <img src="images/hub3.0.png" alt="hub3" class="rien img-fluid"/>
+            <button class="btn" id="pause" title="Pause" style="display: none;"><i class="fa-solid fa-pause"></i></button>
+            <img src="images/modem.webp" alt="modem" class="rien img-fluid"/>
+            <img src="images/capteur.jpg" alt="capteur" class="rien img-fluid"/>
+            <button class="btn" id="droite" title="Afficher l'image suivante"><i class="fa-solid fa-arrow-right"></i></button>
+            <br />
+          </div>
+          <p class="slogan">
+            « Derrière chaque grande innovation se cache une machine bien équipée. Les équipements informatiques ne sont pas de simples outils, ce sont les fondations silencieuses du progrès. »
+          </p>
+        </div>
+      </div>
+    </main>
+ 
+    <!-- footer dans le body, sans fixed-bottom -->
+    <footer class="bg-dark text-white text-center py-4 mt-auto">
+      <p class="mb-0">
+        &copy; 2025 DHTMLProject<br>
+        <small class="text-muted">
+          Développé par 
+          <a href="https://github.com/Diamondra-arch" class="text-info text-decoration-none">Diamondra</a>, 
+          <a href="" class="text-info text-decoration-none">Aimé</a>,
+          <a href="" class="text-info text-decoration-none">Lahatra</a> et
+          <a href="https://github.com/aroutiana18" class="text-info text-decoration-none fw-bold">Arotiana</a>
+        </small>
+      </p>
+    </footer>
+ 
+    <script src="js/PanneauxPub.js"></script>
+ 
+  </body>
+</html>

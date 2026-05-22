@@ -1,0 +1,13 @@
+# Ubuntu and local file system artifacts
+.DS_Store
+Thumbs.db
+.directory
+.Trash-*
+*.swp
+*~
+
+# IDE and Text Editors configs
+.vscode/
+.idea/
+.project
+.settings/
