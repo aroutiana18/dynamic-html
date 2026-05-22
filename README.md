@@ -25,7 +25,7 @@ The platform consists of 5 dedicated interactive pages:
 This project was collaboratively developed by a team of 4 undergraduate students:
 * **Diamondra** - [Diamondra Patricia](https://github.com/Diamondra-arch)
 * **Aimé**
-* **Arotiana**
+* **Arotiana** - [aroutiana18](https://github.com/aroutiana18)
 * **Lahatra** - [LFmijoro](https://github.com/LFmijoro)
 
 ## ⚙️ How to Run Locally
