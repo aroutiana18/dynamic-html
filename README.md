@@ -23,16 +23,16 @@ The platform consists of 5 dedicated interactive pages:
 
 ## 👥 Authors & Contributions
 This project was collaboratively developed by a team of 4 undergraduate students:
-* **Diamondra** - [@PseudoGitHub](https://github.com/Diamondra-arch)
+* **Diamondra** - [Diamondra Patricia](https://github.com/Diamondra-arch)
 * **Aimé**
 * **Arotiana**
-* **Lahatra** - [@PseudoGitHub](https://github.com/LFmijoro)
+* **Lahatra** - [LFmijoro](https://github.com/LFmijoro)
 
 ## ⚙️ How to Run Locally
 Since this application runs entirely client-side, no local server installation is required.
 1. Clone this repository:
-   ```bash
-   git clone [https://github.com/aroutiana18/dynamic-html.git](https://github.com/aroutiana18/dynamic-html.git)
-   ```
+  ```bash
+  git clone [https://github.com/aroutiana18/dynamic-html.git](https://github.com/aroutiana18/dynamic-html.git)
+  ```
 2. Navigate to the project root folder.
 3. Open `index.html` directly in any modern web browser (Ubuntu Firefox, Chromium, etc.).
