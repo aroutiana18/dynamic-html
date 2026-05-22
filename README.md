@@ -23,10 +23,10 @@ The platform consists of 5 dedicated interactive pages:
 
 ## 👥 Authors & Contributions
 This project was collaboratively developed by a team of 4 undergraduate students:
-* **Diamondra**
+* **Diamondra** - [@PseudoGitHub](https://github.com/Diamondra-arch)
 * **Aimé**
 * **Arotiana**
-* **Lahatra**
+* **Lahatra** - [@PseudoGitHub](https://github.com/LFmijoro)
 
 ## ⚙️ How to Run Locally
 Since this application runs entirely client-side, no local server installation is required.
